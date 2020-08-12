@@ -1,0 +1,86 @@
+:root{
+
+    /*:root se refere ao elemento principal do HTML inteiro (ELEMENTO RAIZ)
+    
+    -- : define váriaveis no HTML que poderão ser usadas futuramente nas seguintes camadas do CSS:
+        ex: 
+        body{
+            background-color: var(--color-primary-darker);
+        }
+
+    */
+
+    --color-background: #F0F0F7;
+    --color-primary-lighter: #9871F5;
+    --color-primary-light: #916BEA;
+    --color-primary: #8257E5;
+    --color-primary-dark: #774DD6;
+    --color-primary-darker: #6842c2;
+    --color-secondary: #04D361;
+    --color-secondary-dark: #04BF58;
+    --color-title-in-primary: #FFFFFF;
+    --color-text-in-primary: #D4C2FF;
+    --color-text-title: #32264D;
+    --color-text-complement: #9C98A6;
+    --color-text-base: #6A6180;
+    --color-line-in-white: #E6E6F0;
+    --color-input-background: #F8F8FC;
+    --color-button-text: #FFFFFF;
+    --color-box-base: #FFFFFF;
+    --color-box-footer: #FAFAFC;
+    --color-small-info: #C1BCCC;
+
+    /*Tamanho da fonte padrão: 16px == 100% == 1rem*/
+    font-size: 60%; /*Controle de medidas rem*/
+
+    /*
+        medidas relativas: rem e porcentagem;
+        (são relativos ao superior)
+
+        Já o px é uma medida forte vai prevalecer independentemente do root;
+    */
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /*tira todas os margin e padding do html*/
+
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100vh; /*height == altura*/
+}
+
+body{
+
+    background-color: var(--color-background);
+    display: flex; /*Display == Exibição: Todos os elementos da caixa body tem que ser FLEXiveis*/
+    align-items: center; 
+    justify-content: center;
+}
+
+body,
+input,
+button,
+textarea{
+    font: 500 1.6rem Poppins;
+    /* font-weight: 500; //Peso, força
+    font-family: Poppins;
+    font-size: 1.6rem; */
+    color: var(--color-text-base);
+}
+
+#container {
+    width: 90vw; /*width == largura (quebra em 100 e pega só 90)*/
+    max-width: 700px; /*Vai até a largura máxima de 700px, mesmo que o dispositivo tenha mais de 700px (Pega os 90px e o máxima que chega é a 700px)*/
+}
+
+@media (min-width: 700px) {
+    :root {
+        font-size: 62.5%; /*Todo 1rem vai ser referente a 10px, pq 16px == 100% == 1rem*/
+    }
+}

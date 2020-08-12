@@ -1,0 +1,90 @@
+    <!--
+        Assim se faz um comentário
+        HTML - 
+            HyperText
+                Hiper texto (Texto com mais força - tag <a></a> (Link), imagens, videos... Páginas que levam para outras páginas)
+            Markup
+                Marcação
+
+            Language
+                Linguagem
+        HTML - Linguagem de marcação de hipertexto
+    -->
+
+
+<!DOCTYPE html>
+<html lang="pt_br"> <!--Lang é um atributo que define a linguagem do meu HTML-->
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta nome="theme-color" content="#8257E5">
+
+    <title> Proffy | Sua plataforma de estudos online </title>
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/png">
+
+    <!-- 
+        <style>
+            ESTILIZAÇÃO CSS fica aqui, seja por tag, classe ou id
+
+            /*
+                Cascading StyleSheet
+                    - Folha de estilo em cascata
+                    Cascata é justamente essa força da estilização do nível em relação a propriedade que estou aplicando a estilização
+
+                FORÇA:
+                    - Cascata
+                    - Seletores fortes:
+                        - Id (unique identificator);
+                        - Class (Classes);
+                        - Tag (Marcação html);
+                        
+                        OBS.: A cascata tem que respeitar a ordem dos seletores fortes
+            /*
+
+         </style>
+    -->
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/partils/page-landing.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+   
+
+</head>
+
+<body id="page-landing">
+
+    <div id="container">
+        <div class="logo-container">
+            <img src="images/logo.svg" alt="Proffy"/>
+            <h2>Sua plataforma de estudos online</h2>
+        </div>
+
+        
+    
+        
+        <img class="hero-image" src="images/landing.svg" alt="Plataforma de estudos online"/>
+    
+         <!-- <img src="" alt="Logo"> src é a fonte de onde vou buscar a imagem e alt é a alternativa para caso não ache a                   imagem e essa alternativa geralmente é em texto-->
+         <div class="buttons-container">
+            <a class="study" href="/study">
+                <img src="/images/icons/study.svg" alt="Estudar">
+                Estudar
+            </a>
+            <a class="give-class" href="/give-classes">
+                <img src="/images/icons/give-classes.svg" alt="Dar aula">
+                Dar aula
+            </a>
+         </div>
+
+         <p class="total-connections">
+             Total de conexões já realizadas
+             <img src="/images/icons/purple-heart.svg" alt="Coração roxo">
+         </p>
+
+    </div>
+    
+</body>
+</html>
+
